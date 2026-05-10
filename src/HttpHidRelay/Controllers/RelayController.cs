@@ -84,6 +84,10 @@ namespace HttpHidRelay.Controllers
                 1 => SetRelay(0x02, state),
                 2 => SetRelay(0x03, state),
                 3 => SetRelay(0x04, state),
+                4 => SetRelay(0x05, state),
+                5 => SetRelay(0x06, state),
+                6 => SetRelay(0x07, state),
+                7 => SetRelay(0x08, state),
                 _ => NotFound(new ProblemDetails()
                 {
                     Title = "Wrong relay",
